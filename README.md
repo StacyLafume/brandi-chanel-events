@@ -1,91 +1,80 @@
-# Nubian Open Studio for the Arts (NOSA) 🎨⚛️
+# Brandi Chanel Portfolio
 
-[![Alt Text](src/images/profile.png)](https://brandi-chanel-events.netlify.app/)
+A portfolio website for Brandi Chanel, a Boston-based
+multidisciplinary creative working across art curation,
+event production, music curation, and real estate.
 
-## [NOSA Site](https://brandi-chanel-events.netlify.app/)
+## Live Site
 
-ß
-A community‑driven digital platform thßat connects local artists with the public, sparks collaboration, and uplifts small businesses across Boston. Under the hood, it uses a headless CMS (Netlify CMS) for flexible content management, Stripe for seamless payments, HubSpot for CRM & marketing automation, and Cloudinary for fast, on‑the‑fly image delivery. 🚀
+https://brandi-chanel-events.netlify.app/
 
----
+## Current Features
 
-## 📖 Table of Contents
+- Portrait-led introduction
+- Responsive layout using Material UI breakpoints
+- Email booking link
+- “Explore Her Work” button pointing to a future
+  art-curation section
 
-- [✨ Features](#-features)
-- [🔧 Tech Stack](#-tech-stack)
-- [🚀 Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [⚖️ License](#️-license)
-- [📫 Contact](#-contact)
+## Project Status
 
----
+In development. The current application renders the hero
+section; the art-curation section is not yet implemented.
 
-## ✨ Features
+This project was adapted from the NOSA codebase. Legacy
+components, content, dependencies, and build tooling remain
+in the repository but are not all used by the current page.
 
-- **Connect & Collaborate**: Showcase local artists’ portfolios and events 🎭
-- **Community Marketplace**: Empower small Boston businesses with integrated storefronts 🛍️
-- **Content Management**: Netlify CMS headless setup for markdown‑driven pages 🗂️
-- **Secure Payments**: Stripe checkout for one‑off purchases & subscriptions 💳
-- **Lead Management**: HubSpot forms & workflows to capture and nurture leads 📈
-- **Media Optimization**: Cloudinary delivers responsive, optimized images ☁️📸
-- 🔐 Authentication-ready (JWT / OAuth stubs)
-- 📱 Fully responsive & accessibility‑first
+The original NOSA site is available separately:
+https://nosa-boston-archive.netlify.app/
 
----
+## Tech Stack
 
-## 🔧 Tech Stack
+React, JavaScript, Material UI, Emotion, HTML, and CSS.
 
-| Layer | Technology  
-| Frontend | React, Material‑UI ⚛️ 🎨
-| CMS / Backend | Netlify CMS 🗂️  
-| Payments | Stripe 💳  
-| CRM / Marketing | HubSpot 📈  
-| Media Storage | Cloudinary ☁️📸  
-| Deployment | Netlify (Frontend) 🚀  
-| CI / CD | GitHub Actions / Netlify 🤖
+Built with React Scripts and hosted on Netlify.
 
----
+## Run Locally
 
-## 🚀 Getting Started
+Install Node.js and npm, then run:
 
-### Prerequisites
+```bash
+git clone https://github.com/StacyLafume/brandi-chanel-events.git
+cd brandi-chanel-events
+npm install
+npm start
+```
 
-- Node.js ≥ 16.x & npm or Yarn
-- GitHub repo for Netlify CMS
-- Netlify account (CMS & hosting)
-- Stripe account & API keys
-- HubSpot account & API key
-- Cloudinary account & upload preset
+Open http://localhost:3000/.
 
-### Installation
+## Production Build
 
-1. **Clone the repo**
+```bash
+npm run build
+```
 
-   ```bash
-   git clone https://github.com/StacyLafume/NOSA_00.git
-   cd NOSA_00
+The output is generated in `build/`.
 
-   ```
+The build command first runs `public/main.js`, an inherited
+NOSA content-processing script. It may regenerate tracked
+JSON files under `src/content/`; inspect those changes
+before committing.
 
-2. #### npm install
+## Main Files
 
-   or
+- `src/App.js` — renders the current page
+- `src/pages/Hero.jsx` — portrait, introduction, and buttons
+- `src/images/` — image assets
+- `public/index.html` — HTML template and browser-tab title
+- `public/main.js` — inherited content-processing script
 
-   #### yarn install
+## Netlify Settings
 
-3. ## Run the dev server
-   #### npm start
-   or
-   #### yarn start
+- Production branch: `main`
+- Build command: `npm run build`
+- Publish directory: `build`
 
-Visit http://localhost:3000 to explore NOSA locally 🌟
+## Developer
 
-### ⚖ License
-
-    Distributed under the MIT License. See LICENSE for details.
-
-### 📫 Contact
-
-    Stacy Lafume – @stacylafume
-    Project Link: https://github.com/StacyLafume/NOSA_00
+Built by Stacy Lafume.
+https://stacylafume.com/

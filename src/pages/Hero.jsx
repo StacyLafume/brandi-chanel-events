@@ -47,14 +47,14 @@ const Hero = () => {
         <Typography
           component="h1"
           sx={{
-            fontFamily: '"Anton", "Arial Narrow", sans-serif',
+            fontFamily: '"Squada One", cursive',
             fontSize: {
-              xs: "17vw",
-              md: "8vw",
+              xs: "34vw",
+              md: "16vw",
             },
             fontWeight: 900,
             lineHeight: 0.88,
-            letterSpacing: "-0.03em",
+            letterSpacing: "-0.04em",
             textTransform: "uppercase",
           }}
         >
